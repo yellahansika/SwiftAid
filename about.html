@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SwiftAid</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar dark-nav">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-truck-medical"></i>
+                Swift<span>Aid</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="about.html" class="active">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="btn btn-primary" style="padding: 0.6rem 1.5rem; color: white;">Get Help</a>
+            </div>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <header style="background: var(--dark); padding: 160px 0 80px; text-align: center; color: var(--white); overflow: hidden; position: relative;">
+        <!-- decorative background blur -->
+        <div style="position: absolute; width: 600px; height: 600px; background: rgba(230, 57, 70, 0.15); filter: blur(100px); border-radius: 50%; top: -300px; left: 50%; transform: translateX(-50%); z-index: 0;"></div>
+        <div class="container reveal" style="position: relative; z-index: 1;">
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Our Mission</h1>
+            <p style="font-size: 1.25rem; color: var(--gray); max-width: 700px; margin: 0 auto;">To eliminate preventable delays in emergency response through intuitive technology, giving every patient the best possible chance at survival and recovery.</p>
+        </div>
+    </header>
+
+    <!-- Values Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head reveal text-center">
+                <h2>What Drives Us</h2>
+            </div>
+            <div class="problem-grid" style="margin-top: 0;">
+                <div class="problem-card reveal">
+                    <div class="problem-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Reliability</h3>
+                    <p>In life-or-death moments, failure is not an option. Our systems are built with triple redundancy.</p>
+                </div>
+                <div class="problem-card reveal">
+                    <div class="problem-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Data Privacy</h3>
+                    <p>Your medical history is yours. It is heavily encrypted and only released exactly when you authorize it.</p>
+                </div>
+                <div class="problem-card reveal">
+                    <div class="problem-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Speed</h3>
+                    <p>We shave minutes off response times. In our industry, a single minute is an eternity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section section-bg-gray">
+        <div class="container">
+            <div class="section-head reveal text-center">
+                <h2>Leadership Team</h2>
+                <p>Guided by professionals who have been on the front lines of emergency care.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; max-width: 1000px; margin: 0 auto;">
+                
+                <div class="reveal text-center">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Dr. Robert Chen" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; border: 4px solid var(--white); box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                    <h3 style="margin-bottom: 0.25rem;">Dr. Robert Chen</h3>
+                    <p style="color: var(--primary); font-weight: 500; margin-bottom: 1rem;">Chief Medical Officer</p>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Former ER Director with 15 years overseeing critical trauma routing operations.</p>
+                </div>
+
+                <div class="reveal text-center">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sarah Lin" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; border: 4px solid var(--white); box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                    <h3 style="margin-bottom: 0.25rem;">Sarah Lin</h3>
+                    <p style="color: var(--primary); font-weight: 500; margin-bottom: 1rem;">Chief Executive Officer</p>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Tech visionary who previously scaled logistics software networks globally.</p>
+                </div>
+
+                <div class="reveal text-center">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Marcus Johnson" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; border: 4px solid var(--white); box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                    <h3 style="margin-bottom: 0.25rem;">Marcus Johnson</h3>
+                    <p style="color: var(--primary); font-weight: 500; margin-bottom: 1rem;">Head of Engineering</p>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Cybersecurity expert ensuring HIPAA-compliant encryption pipelines for patient data.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="grid-column: span 1.5;">
+                    <a href="index.html" class="logo mb-2">
+                        <i class="fas fa-truck-medical"></i> Swift<span>Aid</span>
+                    </a>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; max-width: 300px;">Emergency Made Easy. Experience faster intervention and secure healthcare guidance directly from your pocket.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SwiftAid. All rights reserved. Designed to save lives.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Container Placeholder -->
+    <div id="notification-container" class="notification-container"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

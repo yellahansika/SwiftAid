@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - SwiftAid</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar dark-nav">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-truck-medical"></i>
+                Swift<span>Aid</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="features.html" class="active">Features</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="btn btn-primary" style="padding: 0.6rem 1.5rem; color: white;">Get Help</a>
+            </div>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <header style="background: var(--dark); padding: 160px 0 80px; text-align: center; color: var(--white); overflow: hidden; position: relative;">
+        <!-- decorative background blur -->
+        <div style="position: absolute; width: 600px; height: 600px; background: rgba(230, 57, 70, 0.15); filter: blur(100px); border-radius: 50%; top: -300px; left: 50%; transform: translateX(-50%); z-index: 0;"></div>
+        <div class="container reveal" style="position: relative; z-index: 1;">
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Complete Emergency Toolkit</h1>
+            <p style="font-size: 1.25rem; color: var(--gray); max-width: 600px; margin: 0 auto;">Explore the full capability of SwiftAid. Designed to be lightweight on your phone but heavy on protection.</p>
+        </div>
+    </header>
+
+    <!-- Detailed Features List -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr; gap: 4rem; max-width: 900px; margin: 0 auto;">
+                
+                <!-- Feature 1 & 2 -->
+                <div class="reveal" style="display: flex; gap: 2rem; align-items: flex-start; background: var(--white); padding: 2rem; border-radius: 16px; border: 1px solid var(--soft-gray); box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+                    <div style="background: var(--primary-glow); color: var(--primary); width: 80px; height: 80px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;"><i class="fas fa-bell"></i></div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Instant SOS Alerts</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">Trigger emergency notifications to nearby responders with one tap. SwiftAid automatically compiles your location, medical profile summary, and critical vitals to send a robust SOS packet to local EMS networks and your designated caregivers simultaneously.</p>
+                        <ul style="color: var(--text-muted); padding-left: 1.5rem; list-style: disc;">
+                            <li class="mb-1">One-swipe activation to prevent accidental false alarms.</li>
+                            <li class="mb-1">Silent mode support for domestic danger scenarios.</li>
+                            <li>Integration with regional 911/112 services.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="reveal" style="display: flex; gap: 2rem; align-items: flex-start; background: var(--white); padding: 2rem; border-radius: 16px; border: 1px solid var(--soft-gray); box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+                    <div style="background: var(--primary-glow); color: var(--primary); width: 80px; height: 80px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;"><i class="fas fa-hospital-alt"></i></div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Nearest Hospital Locator</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">Auto-detects your location and maps out the closest healthcare facilities. We sync with local health department databases to verify operational hours, ER capacity, and trauma level ratings before recommending a destination.</p>
+                        <ul style="color: var(--text-muted); padding-left: 1.5rem; list-style: disc;">
+                            <li class="mb-1">Real-time facility status (Open/Closed/Diverting).</li>
+                            <li class="mb-1">Filter by specialty (Pediatric ER, Trauma, Cardiac).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="reveal" style="display: flex; gap: 2rem; align-items: flex-start; background: var(--white); padding: 2rem; border-radius: 16px; border: 1px solid var(--soft-gray); box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+                    <div style="background: var(--primary-glow); color: var(--primary); width: 80px; height: 80px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;"><i class="fas fa-location-arrow"></i></div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Live Navigation Assistance</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">Step-by-step directions directly integrated into the app. Rather than switching to a map app, we provide a unified overlay that highlights the fastest routes while continuing to broadcast your location to dispatchers.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="reveal" style="display: flex; gap: 2rem; align-items: flex-start; background: var(--white); padding: 2rem; border-radius: 16px; border: 1px solid var(--soft-gray); box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+                    <div style="background: var(--primary-glow); color: var(--primary); width: 80px; height: 80px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;"><i class="fas fa-language"></i></div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Multi-Language Support</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">Language barriers cost lives. SwiftAid supports 14 languages natively. The SOS dispatcher module automatically translates your text-to-speech inputs into the local operator's language when traveling abroad.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="reveal" style="display: flex; gap: 2rem; align-items: flex-start; background: var(--white); padding: 2rem; border-radius: 16px; border: 1px solid var(--soft-gray); box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+                    <div style="background: var(--primary-glow); color: var(--primary); width: 80px; height: 80px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;"><i class="fas fa-wifi"></i></div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Offline Mode</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">When cellular networks fail, our Offline Mode ensures you maintain access to cached local hospital maps, comprehensive first aid protocols, and your pre-loaded emergency medical ID snapshot.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="reveal" style="display: flex; gap: 2rem; align-items: flex-start; background: var(--white); padding: 2rem; border-radius: 16px; border: 1px solid var(--soft-gray); box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+                    <div style="background: var(--primary-glow); color: var(--primary); width: 80px; height: 80px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;"><i class="fas fa-universal-access"></i></div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Accessibility Features</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">Engineered for inclusivity. SwiftAid allows voice command activations ("Hey Siri, Trigger SwiftAid"), features high-contrast visual modes for the visually impaired, and haptic feedback to confirm actions without looking.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="reveal">
+        <div class="cta-section" style="margin-top: 0; max-width: 100%; border-radius: 0;">
+            <div class="cta-content">
+                <h2>Ready to secure your safety net?</h2>
+                <div class="cta-btns">
+                    <a href="contact.html" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.125rem;">Download SwiftAid</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="grid-column: span 1.5;">
+                    <a href="index.html" class="logo mb-2">
+                        <i class="fas fa-truck-medical"></i> Swift<span>Aid</span>
+                    </a>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; max-width: 300px;">Emergency Made Easy. Experience faster intervention and secure healthcare guidance directly from your pocket.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SwiftAid. All rights reserved. Designed to save lives.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Container Placeholder -->
+    <div id="notification-container" class="notification-container"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
