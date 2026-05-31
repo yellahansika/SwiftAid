@@ -19,7 +19,8 @@ export default function EmergencySOS() {
   const executeSOS = async () => {
     setTriggered(true);
     try {
-      await fetch('http://localhost:5000/api/sos', { method: 'POST' });
+      const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      await fetch(`${baseUrl}/api/sos`, { method: 'POST' });
     } catch(err) {
       console.log("Could not hit backend API", err);
     }

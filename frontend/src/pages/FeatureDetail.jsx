@@ -29,13 +29,33 @@ const AIChatBot = () => {
     scrollToBottom();
   }, [messages, isTyping]);
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (!input.trim()) return;
 
     const userMessage = input.trim();
-    setMessages(prev => [...prev, { role: 'user', content: userMessage }]);
+    const currentMessages = [...messages, { role: 'user', content: userMessage }];
+    setMessages(currentMessages);
     setInput('');
     setIsTyping(true);
+
+    try {
+      const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const response = await fetch(`${baseUrl}/api/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: currentMessages })
+      });
+      if (response.ok) {
+        const data = await response.json();
+        if (data.reply) {
+          setMessages(prev => [...prev, { role: 'bot', content: data.reply }]);
+          setIsTyping(false);
+          return;
+        }
+      }
+    } catch (err) {
+      console.log("Backend chatbot failed, falling back to local simulation.", err);
+    }
 
     setTimeout(() => {
       let botResponse = "I'm sorry, I don't have specific information on that. Please consult a medical professional or press Emergency SOS if it's urgent.";
